@@ -1,6 +1,16 @@
 # lrn-java8-fp
 
-# Build Info
+## Maven 
+
+### Build Commands
+```
+# Parent
+mvn archetype:generate -DgroupId=com.wayne -DartifactId=lrn-java-fp
+# Core submodule
+mvn archetype:generate -DgroupId=com.wayne -DartifactId=lrn-java-fp
+```
+
+## Build Info
 Apache Maven 3.5.3 (3383c37e1f9e9b3bc3df5050c29c8aff9f295297; 2018-02-24T12:49:05-07:00)  
 Maven home: /usr/local/Cellar/maven/3.5.3/libexec  
 Java version: 1.8.0_192, vendor: Oracle Corporation  
