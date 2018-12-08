@@ -7,7 +7,7 @@
 # Parent
 mvn archetype:generate -DgroupId=com.wayne -DartifactId=lrn-java-fp
 # Core submodule
-mvn archetype:generate -DgroupId=com.wayne -DartifactId=lrn-java-fp
+mvn archetype:generate -DgroupId=com.wayne -DartifactId=core
 ```
 
 ## Build Info
