@@ -3,7 +3,18 @@
 ## Maven 
 
 ### Build Commands
+
+#### General
+
+```bash
+mvn package
+mvn install
+mvn test
+mvn verify
 ```
+
+#### Project Generation
+```bash
 # Parent
 mvn archetype:generate -DgroupId=com.wayne -DartifactId=lrn-java-fp
 # Core submodule
@@ -16,4 +27,12 @@ Maven home: /usr/local/Cellar/maven/3.5.3/libexec
 Java version: 1.8.0_192, vendor: Oracle Corporation  
 Java home: /Library/Java/JavaVirtualMachines/jdk1.8.0_192.jdk/Contents/Home/jre  
 Default locale: en_US, platform encoding: UTF-8  
-OS name: "mac os x", version: "10.14", arch: "x86_64", family: "mac"  
+OS name: "mac os x", version: "10.14", arch: "x86_64", family: "mac"
+### [jEnv](http://www.jenv.be/)
+```bash
+brew install jenv
+echo 'export PATH="$HOME/.jenv/bin:$PATH"' >> ~/.zshrc
+echo 'eval "$(jenv init -)"' >> ~/.zshrc
+
+```
+  
