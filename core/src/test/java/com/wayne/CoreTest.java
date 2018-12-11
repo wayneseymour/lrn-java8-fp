@@ -2,6 +2,8 @@ package com.wayne;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import static java.util.Arrays.asList;
 import static org.junit.Assert.*;
@@ -25,11 +27,15 @@ public class CoreTest {
         return a * b;
     }
     @Test
-    public void listMutation () {
-      List<Integer> l = asList(1, 2, 3);
-      assertEquals(impureAppend(4, l), "");
+    public void testListMutationAsArrayList () {
+      // TODO: Assert what occurs when a different impl is passed, like a List vs ArrayList vs ?Set.
+      List<Integer> xn  = new ArrayList<>(asList(1, 2, 3));
+      assertEquals(3, xn.size());
+      impureAppend(99, xn);
+      assertEquals(4, xn.size());
+//      xn.forEach(x -> System.out.println("\n\t### x: " + x)); // Dump vars.
     }
-    public List<Integer> impureAppend (int i, List<Integer> xi) {
+    public static List<Integer> impureAppend (int i, List<Integer> xi) {
       xi.add(i);
       return xi;
     }
